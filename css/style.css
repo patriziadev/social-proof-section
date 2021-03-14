@@ -1,4 +1,63 @@
+:root {
+  --dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Spartan", sans-serif;
+  line-height: 1.5em;
+}
+
+.container {
+  width: 90vw;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: var(--dark-magenta);
+  font-size: 3.5em;
+  line-height: 1em;
+}
+
+#intro {
+  display: flex;
+  flex-flow: row;
+}
+
+.intro-item {
+  width: 100%;
+}
+
+#text p {
+  color: var(--dark-grayish-magenta);
+  padding: 1em 6em 0 0;
+}
+
+.comment {
+  background-color: var(--light-grayish-magenta);
+  color: var(--dark-magenta);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
