@@ -51,6 +51,19 @@ h1 {
   background-color: var(--light-grayish-magenta);
   color: var(--dark-magenta);
   font-weight: 700;
+  padding: 15px 30px;
+  margin: 1em 0;
+  border-radius: 8px;
+  display: flex;
+}
+
+.stars {
+  background-image: url("/images/icon-star.svg");
+  background-repeat: space;
+  background-position: center left;
+  width: 100px;
+  height: 15px;
+  margin-right: 1.5em;
 }
 
 .attribution {
