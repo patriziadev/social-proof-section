@@ -22,9 +22,6 @@ body {
   max-width: 1440px;
   height: 100vh;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 h1 {
@@ -48,7 +45,7 @@ h1 {
   padding: 1em 6em 0 0;
 }
 
-.comment {
+.rate {
   background-color: var(--light-grayish-magenta);
   color: var(--dark-magenta);
   font-weight: 700;
@@ -63,15 +60,15 @@ h1 {
   animation-fill-mode: backwards;
 }
 
-.comment-1 {
+.rate-1 {
   animation-delay: 0s;
 }
 
-.comment-2 {
+.rate-2 {
   animation-delay: 0.4s;
 }
 
-.comment-3 {
+.rate-3 {
   animation-delay: 0.8s;
 }
 
@@ -82,6 +79,40 @@ h1 {
   width: 100px;
   height: 16px;
   margin-right: 1.5em;
+}
+
+#comments {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 24vw;
+  color: var(--light-grayish-magenta);
+  background: var(--dark-magenta);
+  border-radius: 10px;
+  padding: 2em;
+  font-size: 0.9em;
+}
+
+.card .user {
+  display: flex;
+  align-items: center;
+  margin: 0 0 25px 0;
+}
+
+.card .avatar img {
+  border-radius: 50%;
+  width: 50px;
+  margin: 0 30px 0 0;
+}
+
+.card .name {
+  font-weight: 700;
+}
+
+.card .role {
+  color: var(--soft-pink);
 }
 
 .attribution {
