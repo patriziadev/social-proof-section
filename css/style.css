@@ -4,6 +4,7 @@
   --dark-grayish-magenta: hsl(303, 10%, 53%);
   --light-grayish-magenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
+  --animation-delay: 1s;
 }
 
 * {
@@ -50,7 +51,6 @@ h1 {
   color: var(--dark-magenta);
   font-weight: 700;
   padding: 15px 30px;
-  margin: 1em 0;
   border-radius: 8px;
   display: flex;
   animation-name: moveInR;
@@ -58,18 +58,6 @@ h1 {
   animation-iteration-count: 1;
   animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
   animation-fill-mode: backwards;
-}
-
-.rate-1 {
-  animation-delay: 0s;
-}
-
-.rate-2 {
-  animation-delay: 0.4s;
-}
-
-.rate-3 {
-  animation-delay: 0.8s;
 }
 
 .stars {
@@ -93,6 +81,11 @@ h1 {
   border-radius: 10px;
   padding: 2em;
   font-size: 0.9em;
+  animation-name: moveVer;
+  animation-duration: 1.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0, 0, 0.6, 1);
+  animation-fill-mode: backwards;
 }
 
 .card .user {
@@ -127,6 +120,15 @@ h1 {
 @keyframes moveInR {
   0% {
     transform: translate(1000%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}
+
+@keyframes moveVer {
+  0% {
+    transform: translate(0, 1000%);
   }
   100% {
     transform: translate(0%, 0);
